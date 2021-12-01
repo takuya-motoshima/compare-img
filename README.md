@@ -8,7 +8,7 @@ Compare two or more images at the binary level.
 ## Demo
 You can see a working demo [here](https://takuya-motoshima.github.io/compare-img/demo).
 
-<img src="[screencaps/demo.jpg](https://raw.githubusercontent.com/takuya-motoshima/js-camera/main/screencaps/demo.jpg)" width="800">
+<img src="https://raw.githubusercontent.com/takuya-motoshima/compare-img/main/screencaps/demo.jpg" width="800">
 
 ## Browser usage
 See how to use [compare-img in the browser](https://github.com/takuya-motoshima/compare-img/tree/main/browser-examples).
