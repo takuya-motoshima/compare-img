@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/css/app.css"],
+  "sourcesContent": [":root {\r\n  --top-spacing: 74px;\r\n  scroll-padding-top: var(--top-spacing);\r\n  line-height: 1.0;\r\n}\r\n\r\n.topnav {\r\n  padding: .75rem 0;\r\n  background-color: #1fda9a;\r\n}\r\n\r\n  .topnav .navbar-toggler {\r\n    padding: 0;\r\n    border: 0\r\n  }\r\n\r\n  .topnav .navbar-nav .nav-link {\r\n    padding-right: .25rem;\r\n    padding-left: .25rem;\r\n  }\r\n\r\n  .topnav .navbar-nav .nav-link.active {\r\n    font-weight: 600;\r\n  }\r\n\r\n    .topnav .navbar-nav-svg {\r\n      width: 1rem;\r\n      height: 1rem\r\n    }\r\n\r\n.navbar.fixed-top+.layout {\r\n  padding-top: var(--top-spacing);\r\n}\r\n\r\nlabel.error {\r\n  color: #f00;\r\n}\r\n\r\n.timgs .list-group-item {\r\n  position: relative;\r\n}\r\n\r\n  .timgs img {\r\n    width: 120px;\r\n    height: 120px;\r\n    object-fit: contain;\r\n  }\r\n\r\n    .timgs .fa-spin {\r\n      animation-duration: 1.2s;\r\n    }\r\n"],
+  "mappings": "AAAA,MACE,oBACA,sCACA,cAGF,QANA,iBAQE,yBAGA,wBAXF,UAaI,SAGF,8BACE,qBACA,oBAGF,qCACE,gBAGA,wBACE,WACA,YAGN,0BACE,+BAGF,YACE,UAGF,wBACE,kBAGA,WACE,YACA,aACA,mBAGA,gBACE",
+  "names": []
+}
