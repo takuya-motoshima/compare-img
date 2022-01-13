@@ -39,7 +39,9 @@ function compareImgs() {
   const imgs = [];
   for (let img of timgs.find('img'))
     imgs.push(img.src);
+  console.log('imgs=', imgs)
   compare(imgs).then(res => {
+    console.log('res=', res);
     spnr.removeClass('show');
     if (res)
       rslt.removeClass('text-danger').addClass('text-success').html('<i class="fas fa-check"></i> The images are all the same');

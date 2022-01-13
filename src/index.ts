@@ -27,6 +27,11 @@ export default async function(...imgs: string[]): Promise<boolean> {
           img += `?t=${+new Date}`;
         // Load image.
         const blob = await fetchBlob(img);
+
+        // Returns null if the image cannot be loaded.
+        if (!blob)
+          return void rslv(null);
+
         // Convert image to binary string.
         const bin = await blobToBinaryString(blob);
         rslv(bin);

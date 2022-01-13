@@ -2,9 +2,9 @@
  * Fetch remote data and return the fetched result in blob.
  *
  * @param   {string}          url URL of the data to read.
- * @return  {Promise<Blob>}   Returns the blob of the read data.
+ * @return  {Promise<Blob|null>}   Returns the blob of the read data.
  */
-export default async function(url: string): Promise<Blob> {
+export default async function(url: string): Promise<Blob|null> {
   // console.log(`Load ${url}`);
   // return new Promise<Blob>((rslv, rej) => {
   //   const img = new Image;
@@ -39,8 +39,11 @@ export default async function(url: string): Promise<Blob> {
   });
 
   // Throw an exception if the response is an error. 
-  if (!res.ok)
-    throw Error(`${url} could not be loaded, response status is ${res.status}`);
+  if (!res.ok) {
+    console.warn(`${url} could not be loaded, response status is ${res.status}`);
+    return null;
+    // throw Error(`${url} could not be loaded, response status is ${res.status}`);
+  }
 
   // Returns a blob of the read data if the load is successful.
   return res.blob();
