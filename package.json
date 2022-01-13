@@ -1,6 +1,6 @@
 {
   "name": "compare-img",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compare two or more images at the binary level.",
   "main": "dist/build.common.js",
   "module": "dist/build.esm.js",
