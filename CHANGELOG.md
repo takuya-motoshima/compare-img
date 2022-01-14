@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2022-01-14
+### Fixed
+- Remove another hard link.
+
 ## [1.0.2] - 2022-01-14
 ### Fixed
 - Remove symbolic links.
